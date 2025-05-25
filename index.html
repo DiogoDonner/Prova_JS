@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Telefônica</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1>Lista Telefônica</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Telefonico</title>
-    <script src="index.js"></script>
-</head>
-
-<body>
     <div>
-        <label for="name">Digite seu nome</label>
-        <input id=name type="text">
-    </div>
-    <div>
-        <label for="inputnumber1">Digite o número PRINCIPAL de contato na formatação <b>(99) 9 9999-9999</b></label>
-        <input id="inputnumber1" type="text">
-        <div>
-            <label for="inputnumber2">Digite o número SECUNDÁRIO de contato na formatação <b>(99) 9
-                    9999-9999</b></label>
-            <input id="inputnumber2" type="text">
-        </div>
-    </div>
-<div>
-    <button id="validar"><b>VALIDAR</b></button>
-</div>
-</body>
+      <label for="input_nome">Digite seu nome:</label>
+      <input id="input_nome" placeholder="Nome" type="text" /><br>
 
+      <label for="input_telefone1">Digite o número <b>PRINCIPAL</b> de contato no formato <b>(99) 9
+                9999-9999</b>:</label>
+      <input id="input_telefone1" placeholder="Telefone Principal" type="tel" /> <br>
+
+      <label for="input_telefone2">Digite o número <b>SECUNDÁRIO</b> de contato no formato: <b>(99) 9
+                9999-9999</b>:</label>
+      <input id="input_telefone2" placeholder="Telefone Secundário" type="tel" /><br>
+
+      <button id="botao_adicionar">Adicionar Contato</button><br><br>
+    </div>
+
+    <table border="1" id="tabela_contatos">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone Principal</th>
+          <th>Telefone Secundário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Contatos aparecerão aqui -->
+      </tbody>
+    </table>
+  </body>
 </html>
