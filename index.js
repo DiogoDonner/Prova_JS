@@ -34,7 +34,6 @@ function adicionarContato() {
   salvarContatosLocalStorage();
   adicionarContatoNaTabela(contato);
 
-  // Limpar campos
   document.getElementById("input_nome").value = "";
   document.getElementById("input_telefone1").value = "";
   document.getElementById("input_telefone2").value = "";
